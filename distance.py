@@ -12,9 +12,13 @@ class Distance:
     def add_distance_row(self, row):
         self.distances.append(row)
 
-    def get_distance(address1, address2):
+    def get_distance(self, address1, address2):
         index1 = self.get_address_index(address1)
         index2 = self.get_address_index(address2)
 
-        if self.distances[index1][index2] == None:
-            self.distances
+        distance = self.distances[index1][index2]
+
+        if distance == "":
+            distance = self.distances[index2][index1]
+        
+        return float(distance)
