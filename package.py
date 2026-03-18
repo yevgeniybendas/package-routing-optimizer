@@ -1,4 +1,4 @@
-# Package class to 
+# Package class to create package objects and store in the hash table
 class Package:
     def __init__(self, package_id, address, city, state, zip_code, deadline, weight, notes):
         self.package_id = package_id
@@ -9,7 +9,7 @@ class Package:
         self.deadline = deadline
         self.weight = weight
         self.notes = notes
-        self.status = "At hub"
+        self.status = "At the hub"
         self.departure_time = None
         self.delivery_time = None
         self.truck_id = None

@@ -1,8 +1,9 @@
+#Distance class define 2 list for addresses and distances as a 2d matrix
 class Distance:
     def __init__(self):
         self.addresses = []
         self.distances = []
-    #Functions to store addresses in a list and get address index for calculating distances later
+    #Functions to store addresses in a list and get address index for calculating distances
     def add_address(self, address):
         self.addresses.append(address)
     
